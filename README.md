@@ -93,21 +93,6 @@ npm start
 
 ---
 
-## 🔄 Developer Tips
-
-- Clear node modules or builds if needed:
-
-```bash
-rm -rf **/node_modules
-rm -rf **/dist
-```
-
-- Backend stores data in `backend/data/`:
-  - `week2.csv` → latest competitor upload
-  - `week1.csv` → previous week's file
-
----
-
 ## 📄 License
 
 MIT License
