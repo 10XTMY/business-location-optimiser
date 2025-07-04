@@ -108,16 +108,6 @@ rm -rf **/dist
 
 ---
 
-## 🧼 Troubleshooting
-
-| Problem                              | Fix                                                                 |
-|--------------------------------------|----------------------------------------------------------------------|
-| React fails to launch on port 3000   | Run backend first. Say **Y** when React prompts for a different port |
-| Changes not reflected on map         | Refresh the browser or re-upload file                               |
-| Backend not responding               | Check terminal logs, ensure you're in `backend` dir when starting   |
-
----
-
 ## 📄 License
 
 MIT License

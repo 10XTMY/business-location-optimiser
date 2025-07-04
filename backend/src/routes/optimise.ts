@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/optimise', (req, res) => {
     console.log('>> /optimise route hit');
     try {
-        const result = runOptimisation();  // This should now exist
+        const result = runOptimisation();
         res.json(result);
     } catch (err: any) {
         console.error('Failed to run optimisation:', err.message);

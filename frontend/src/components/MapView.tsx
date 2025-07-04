@@ -1,4 +1,3 @@
-// src/components/MapView.tsx
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import { OutputArea } from '../types';

@@ -1,4 +1,3 @@
-// src/components/CompetitorChangeMap.tsx
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Circle, Tooltip } from 'react-leaflet';
 import axios from 'axios';
@@ -51,8 +50,6 @@ const CompetitorChangeMap: React.FC<Props> = ({ refreshTrigger }) => {
                         </Tooltip>
                     </Circle>
                 ))}
-
-                {/* Removed competitors (Week 1 only) */}
                 {changeData?.removed.map((pt, idx) => (
                     <Circle
                         key={`removed-${idx}`}
