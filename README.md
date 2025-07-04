@@ -24,8 +24,8 @@ root/
 
 ## ⚙️ Requirements
 
-- Node.js (v18 or higher recommended)
-- npm (v9+)
+- Node.js (v20+)
+- npm (v10+)
 - Internet connection (for tile maps)
 
 ---
