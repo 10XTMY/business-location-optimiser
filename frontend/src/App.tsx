@@ -12,7 +12,7 @@ function App() {
 
     const fetchOptimisation = () => {
         axios
-            .get('http://localhost:3000/api/optimise')
+            .get('http://localhost:3000/api/optimise', { timeout: 60000 })
             .then((res) => setData(res.data))
             .catch((err) => {
                 console.error('Failed to fetch optimise data:', err);
@@ -47,7 +47,9 @@ function App() {
             {data?.selectedLocations ? (
                 <>
                     <div className="coverage-summary">
-                        <strong>Total population covered:</strong> {data.totalPopulationCovered.toLocaleString()}
+                        <strong>Total population covered:</strong> {data.totalPopulationCovered
+                        ? data.totalPopulationCovered.toLocaleString()
+                        : '0'}
                     </div>
 
                     <MapView businessLocations={data.selectedLocations} />
